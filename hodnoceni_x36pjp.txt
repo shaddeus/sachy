@@ -1,0 +1,42 @@
+    * Hodnotitel: Vagner Ladislav (root), 100.00 %
+
+       - pri kompilaci ty priznaky -Wall  -pedantic patri i do tech casti, ktere
+      kompiluji (-c). Pokud to udelate:
+
+      chess.cpp: In function ‘void initSach(int, char**)’:
+      chess.cpp:26: warning: unused variable ‘ch’
+      chess.cpp: In function ‘int ohodnotTah(const tah_t&)’: 
+      chess.cpp:769: warning: array subscript has type ‘char’
+      chess.cpp:770: warning: array subscript has type ‘char’
+      chess.cpp:776: warning: array subscript has type ‘char’
+      chess.cpp:777: warning: array subscript has type ‘char’
+      chess.cpp:788: warning: array subscript has type ‘char’
+      chess.cpp:789: warning: array subscript has type ‘char’
+      chess.cpp:793: warning: array subscript has type ‘char’
+      chess.cpp:794: warning: array subscript has type ‘char’
+      chess.cpp:815: warning: array subscript has type ‘char’
+      chess.cpp:819: warning: array subscript has type ‘char’
+      chess.cpp:824: warning: array subscript has type ‘char’
+      chess.cpp:828: warning: array subscript has type ‘char’
+      chess.cpp: In function ‘bool mrtvaPozice()’:
+      chess.cpp:563: warning: control reaches end of non-void function
+      figurky.cpp: In member function ‘void CFigurka::vykresli(int) const’:
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+      figurky.cpp:204: warning: missing braces around initializer for ‘const char[3][8]’
+
+      indexace znakem (char) neni stastna volba, char muze byt i znamenkovy, coz
+      muze vest k zapornemu indexu - oskliva chyba.
+
+       - jinak se mi realizace libi, ocenuji provedeni (ncurses, umela inteligence)
+      i ansi grafiku figurek.
+
+       - sachy hrat neumim, ale AI se chova obcas divne. Pomerne pekne zatlaci,  
+         muze snadno ziskat vyhodu (napr. damu), ale pak si to "rozmysli" a udela 
+         dle meho slaby tah... Ale jak rikam sachy hrat neumim, treba je to naopak
+         silny tah.
+
+
